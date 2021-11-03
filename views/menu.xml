@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+	<record id="action_open_configurador" model="ir.actions.act_window">
+		<field name="name">Configurador de equipamiento</field>
+		<field name="res_model">configurador</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	<menuitem id="menu_principal" name="Configurador"/>
+	<menuitem id="menu_horizontal" name="Configurador" parent="menu_principal" action="action_open_configurador"/>
+</odoo>
