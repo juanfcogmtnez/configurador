@@ -3,7 +3,7 @@
 {
 	'name':'Módulo de configuracion y selección de equipamiento',
 	'version':'1.0',
-	'depends':['base'],
+	'depends':['project','equipamiento'],
 	'author':'Juan Fco Garcia',
 	'category':'Consultoría',
 	'description':'''
