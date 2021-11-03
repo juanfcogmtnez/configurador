@@ -6,7 +6,7 @@ from odoo import fields, models, api
 class Configurador(models.Model):
 	_name = "configurador"
 	name = fields.Many2one(string="Nombre")
-	plan_ids = fields.Many2one(
+	plan_id = fields.Many2one(
 		comodel_name='project.task',
 		string = 'Plan de espacios'
 	) 	
