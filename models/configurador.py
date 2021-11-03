@@ -5,7 +5,7 @@ from odoo import fields, models, api
 
 class Configurador(models.Model):
 	_name = "configurador"
-	_inherits = {'project.task':'plan_id'}
+	_inherits = {'project.task':'tarea'}
 	name = fields.Many2one(string="Nombre")
-	plan_id = fields.Many2one('project.task') 	
+	tarea = fields.Many2one('project.task') 	
 	active = fields.Boolean(string="Activo",default=True)
