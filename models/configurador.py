@@ -5,5 +5,9 @@ from odoo import fields, models, api
 
 class Configurador(models.Model):
 	_name = "configurador"
-	plan = fields.Char(string="configuración") 	
-	active = fields.Boolean(string="Activo",default=False)
+	name = fields.Many2one(string="Nombre")
+	plan_ids = fields.Many2one(
+		comodel_name='project.task',
+		string = 'Plan de espacios'
+	) 	
+	active = fields.Boolean(string="Activo",default=True)

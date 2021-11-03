@@ -11,12 +11,13 @@
 				<div class="oe_title">
 					<div class="o_row">
 						<h1 style="display:flex;">
-							<field name="plan" class="oe_inline" placeholder="Nombre de equipamiento (español)" required="1" default_focus="1"></field>
+							<field name="name" class="oe_inline" placeholder="Nombre del plan (español)" required="1" default_focus="1"></field>
 						</h1>
 					</div>
 				</div>				
 				<group string="Datos principales" style="margin-top:-10px">
 					<group>
+						<field name="plan"></field>
 					</group>
 					<group>
 						<field name="active"></field>
