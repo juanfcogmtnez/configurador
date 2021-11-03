@@ -17,7 +17,7 @@
 				</div>				
 				<group string="Datos principales" style="margin-top:-10px">
 					<group>
-						<field name="plan_id"></field>
+						<field name="tarea"></field>
 					</group>
 					<group>
 						<field name="active"></field>
