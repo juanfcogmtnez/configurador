@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+	<record id="view_espacios_form" model="ir.ui.view">
+		<field name="name">Vista formulario de espacio</field>
+		<field name="model">espacios</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+				<widget name="web_ribbon" title="Archivado" bg-color="bg-info" attrs="{'invisible':[('active','=',True)]}"/>
+				<div class="oe_title">
+					<div class="o_row">
+						<h1 style="display:flex;">
+							<field name="name" class="oe_inline" placeholder="Nombre de espacio o local" required="1" default_focus="1"></field>
+						</h1>
+				</div>
+				</div>				
+				<group string="Datos principales" style="margin-top:-10px">
+					<group>
+					<field name="codigo"/>
+					<field name="bloque"/>
+					<field name="planta"/>
+					</group>
+					<group>
+					<field name="plan_id" options="{'no_create': True}"/>
+					<field name="superficie"></field>
+					<field name="active"></field>
+					</group>
+					<field name="description" placeholder="Descripción"/>
+				</group>
+			</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="view_espacios_tree" model="ir.ui.view">
+		<field name="name">Vista lista de espacios</field>
+		<field name="model">espacios</field>
+		<field name="arch" type="xml">
+			<tree>	
+				<field name="plan_id"/>
+				<field name="bloque"/>
+				<field name="planta"/>
+				<field name="codigo"/>
+				<field name="name"/>
+				<field name="superficie"/>
+			</tree>
+		</field>
+	</record>
+</odoo>

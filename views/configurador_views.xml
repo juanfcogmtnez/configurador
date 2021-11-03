@@ -18,10 +18,12 @@
 				<group string="Datos principales" style="margin-top:-10px">
 					<group>
 						<field name="tarea"></field>
+						<field name="project_id"></field>
 					</group>
 					<group>
 						<field name="active"></field>
 					</group>
+					<field name="espacios_ids"/>
 				</group>
 				</sheet>
 		</form>

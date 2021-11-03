@@ -12,6 +12,7 @@
 	''',
 	'data':[
 	'views/menu.xml',
-	'views/configurador_views.xml'
+	'views/configurador_views.xml',
+	'views/espacios_views.xml'
 ],
 }

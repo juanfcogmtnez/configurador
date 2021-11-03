@@ -1,3 +1,3 @@
 # -*- coding:utf-8 -*-
 
-from . import configurador
+from . import configurador,espacios

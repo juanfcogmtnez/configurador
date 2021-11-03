@@ -6,6 +6,12 @@
 		<field name="res_model">configurador</field>
 		<field name="view_mode">tree,form</field>
 	</record>
+	<record id="action_open_espacios" model="ir.actions.act_window">
+                <field name="name">Espacios</field>
+                <field name="res_model">espacios</field>
+                <field name="view_mode">tree,form</field>
+        </record>
 	<menuitem id="menu_principal" name="Configurador"/>
 	<menuitem id="menu_horizontal" name="Configurador" parent="menu_principal" action="action_open_configurador"/>
+	<menuitem id="menu_vertical_es" name="Espacios" parent="menu_horizontal" action="action_open_espacios"/>
 </odoo>
