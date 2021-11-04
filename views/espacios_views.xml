@@ -2,8 +2,8 @@
 
 <odoo>
 	<record id="view_espacios_form" model="ir.ui.view">
-		<field name="name">Vista formulario de espacio</field>
-		<field name="model">espacios</field>
+		<field name="name">Vista formulario de equipacion</field>
+		<field name="model">equipacion</field>
 		<field name="arch" type="xml">
 			<form>
 				<sheet>
@@ -11,8 +11,7 @@
 				<div class="oe_title">
 					<div class="o_row">
 						<h1 style="display:flex;">
-							<field name="name" class="oe_inline" placeholder="Nombre de espacio o local" required="1" default_focus="1">-</field>
-							<field name="sub_name" class="oe_inline" placeholder="Nombre de sub-espacio o sub-local"  default_focus="1"></field>
+							<field name="name" class="oe_inline" placeholder="Nombre de equipacion" required="1" default_focus="1">-</field>
 
 						</h1>
 				</div>
@@ -20,11 +19,9 @@
 				<group string="Datos principales" style="margin-top:-10px">
 					<group>
 					<field name="codigo"/>
-					<field name="bloque"/>
-					<field name="planta"/>
 					</group>
 					<group>
-					<field name="proyecto_id"/>
+					<field name="espacio_id"/>
 					<field name="superficie"></field>
 					<field name="active"></field>
 					</group>
@@ -34,14 +31,12 @@
 			</form>
 		</field>
 	</record>
-	<record id="view_espacios_tree" model="ir.ui.view">
-		<field name="name">Vista lista de espacios</field>
-		<field name="model">espacios</field>
+	<record id="view_equipacion_tree" model="ir.ui.view">
+		<field name="name">Vista lista de equipacion</field>
+		<field name="model">equipacion</field>
 		<field name="arch" type="xml">
 			<tree>	
-				<field name="proyecto_id"/>
-				<field name="bloque"/>
-				<field name="planta"/>
+				<field name="espacio_id"/>
 				<field name="codigo"/>
 				<field name="name"/>
 				<field name="superficie"/>

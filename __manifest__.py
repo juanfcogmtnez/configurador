@@ -13,6 +13,7 @@
 	'data':[
 	'views/menu.xml',
 	'views/configurador_views.xml',
-	'views/espacios_views.xml'
+	'views/espacios_views.xml',
+	'views/equipacion_views.xml',
 ],
 }

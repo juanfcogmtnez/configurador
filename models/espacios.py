@@ -15,3 +15,8 @@ class Espacios(models.Model):
 	bloque = fields.Char(string='Bloque')
 	planta = fields.Char(string='Planta')
 	proyecto_id = fields.Many2one(comodel_name='configurador', string = 'Proyecto')
+	equipacion_ids = fields.One2many(
+		comodel_name='equipacion',
+		inverse_name = 'espacio_id',
+		string = "Equipamiento",
+	)

@@ -11,7 +11,14 @@
                 <field name="res_model">espacios</field>
                 <field name="view_mode">tree,form</field>
         </record>
+	<record id="action_open_equipacion" model="ir.actions.act_window">
+                <field name="name">Equipaciones</field>
+                <field name="res_model">equipacion</field>
+                <field name="view_mode">tree,form</field>
+        </record>
 	<menuitem id="menu_principal" name="Configurador"/>
 	<menuitem id="menu_horizontal" name="Configurador" parent="menu_principal" action="action_open_configurador"/>
+	<menuitem id="menu_vertical_conf" name="Configurador" parent="menu_horizontal" action="action_open_configurador"/>
 	<menuitem id="menu_vertical_es" name="Espacios" parent="menu_horizontal" action="action_open_espacios"/>
+	<menuitem id="menu_vertical_e1" name="Equipación" parent="menu_horizontal" action="action_open_equipacion"/>
 </odoo>
