@@ -15,7 +15,7 @@ class Equipacion(models.Model):
 	sub_ull = fields.Char(string="SUB ULL")
 	sub_ull_2 = fields.Char(string="SUB ULL 2")
 	item_code = fields.Char(string="item-code")
-	espacio_ids = fields.Many2many(comodel_name='espacios', string = 'Local')
+	espacio_id = fields.Many2one(comodel_name='espacios',delegate=True, string = 'Local')
 	descripcion_es = fields.Text(string='Descripción')
 	descripcion_fr = fields.Text(string='Description')
 	descripcion_en = fields.Text(string='Description')
@@ -35,11 +35,6 @@ class Equipacion(models.Model):
 	car_ancho = fields.Float(string="Ancho(cm)")
 	car_largo = fields.Float(string="Largo(cm)")
 	car_peso = fields.Float(string="Peso(kg)")
-	superficie = fields.Float(string="Superficie (cm2)",compute="_sup_basic",stored=True)
-	@api.onchange('car_ancho','car_largo')
-	def _sup_basic(self):
-		cm_superficie = self.car_ancho * self.car_largo
-		self.superficie = cm_superficie/10000
 	ubicacion = fields.Selection(selection=[
 	('suelo','suelo'),
 	('mural','mural'),

@@ -29,6 +29,7 @@
 					<field name="active"></field>
 					</group>
 					<field name="description" placeholder="Descripción"/>
+					<field name="equipacion_ids"/>
 				</group>
 			</sheet>
 			</form>
