@@ -11,7 +11,9 @@
 				<div class="oe_title">
 					<div class="o_row">
 						<h1 style="display:flex;">
-							<field name="name" class="oe_inline" placeholder="Nombre de espacio o local" required="1" default_focus="1"></field>
+							<field name="name" class="oe_inline" placeholder="Nombre de espacio o local" required="1" default_focus="1">-</field>
+							<field name="sub_name" class="oe_inline" placeholder="Nombre de sub-espacio o sub-local"  default_focus="1"></field>
+
 						</h1>
 				</div>
 				</div>				
@@ -22,7 +24,7 @@
 					<field name="planta"/>
 					</group>
 					<group>
-					<field name="plan_id" options="{'no_create': True}"/>
+					<field name="proyecto_id"/>
 					<field name="superficie"></field>
 					<field name="active"></field>
 					</group>
@@ -37,7 +39,7 @@
 		<field name="model">espacios</field>
 		<field name="arch" type="xml">
 			<tree>	
-				<field name="plan_id"/>
+				<field name="proyecto_id"/>
 				<field name="bloque"/>
 				<field name="planta"/>
 				<field name="codigo"/>

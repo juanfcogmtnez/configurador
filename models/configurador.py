@@ -11,6 +11,6 @@ class Configurador(models.Model):
 	active = fields.Boolean(string="Activo",default=True)
 	espacios_ids = fields.One2many(
 		comodel_name='espacios',
-		inverse_name = 'name',
-		string = "Espacios",
+		inverse_name = 'proyecto_id',
+		string = "Locales",
 	)
