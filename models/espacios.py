@@ -17,6 +17,6 @@ class Espacios(models.Model):
 	proyecto_id = fields.Many2one(comodel_name='configurador', string = 'Proyecto')
 	equipacion_ids = fields.One2many(
 		comodel_name='equipacion',
-		inverse_name = 'espacio_id',
+		inverse_name = 'espacio_ids',
 		string = "Equipamiento",
 	)

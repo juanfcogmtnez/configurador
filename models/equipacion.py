@@ -5,6 +5,7 @@ from odoo import fields, models, api
 
 class Equipacion(models.Model):
 	_name = "equipacion"
+	code = fields.Char(string="code")
 	name = fields.Char(string='Equipacion')
 	name_es = fields.Char(string='Equipamiento')
 	name_fr = fields.Char(string='Équipement')
@@ -14,7 +15,7 @@ class Equipacion(models.Model):
 	sub_ull = fields.Char(string="SUB ULL")
 	sub_ull_2 = fields.Char(string="SUB ULL 2")
 	item_code = fields.Char(string="item-code")
-	espacio_id = fields.Many2one(comodel_name='espacios', string = 'Proyecto')
+	espacio_ids = fields.Many2many(comodel_name='espacios', string = 'Local')
 	descripcion_es = fields.Text(string='Descripción')
 	descripcion_fr = fields.Text(string='Description')
 	descripcion_en = fields.Text(string='Description')
