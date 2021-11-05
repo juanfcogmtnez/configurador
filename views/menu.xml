@@ -19,7 +19,8 @@
 	<menuitem id="menu_principal" name="Configurador"/>
 	<menuitem id="menu_horizontal_conf" name="Configurador" parent="menu_principal" action="action_open_configurador"/>
 	<menuitem id="menu_horizontal_cons" name="Consolidados" parent="menu_principal"/>
-	<menuitem id="menu_vertical_conf" name="Plan" parent="menu_horizontal_conf" action="action_open_configurador"/>
+	<menuitem id="menu_vertical_conf" name="Planes" parent="menu_horizontal_conf" action="action_open_configurador"/>
+	<menuitem id="menu_vertical_cons" name="Planes" parent="menu_horizontal_cons" action="action_open_configurador"/>
 	<menuitem id="menu_vertical_es" name="Espacios" parent="menu_horizontal_cons" action="action_open_espacios"/>
 	<menuitem id="menu_vertical_eq" name="Equipación" parent="menu_horizontal_cons" action="action_open_equipacion"/>
 </odoo>
