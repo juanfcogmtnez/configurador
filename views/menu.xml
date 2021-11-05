@@ -17,8 +17,9 @@
                 <field name="view_mode">tree,form</field>
         </record>
 	<menuitem id="menu_principal" name="Configurador"/>
-	<menuitem id="menu_horizontal" name="Configurador" parent="menu_principal" action="action_open_configurador"/>
-	<menuitem id="menu_vertical_conf" name="Configurador" parent="menu_horizontal" action="action_open_configurador"/>
-	<menuitem id="menu_vertical_es" name="Espacios" parent="menu_horizontal" action="action_open_espacios"/>
-	<menuitem id="menu_vertical_e1" name="Equipación" parent="menu_horizontal" action="action_open_equipacion"/>
+	<menuitem id="menu_horizontal_conf" name="Configurador" parent="menu_principal" action="action_open_configurador"/>
+	<menuitem id="menu_horizontal_cons" name="Consolidados" parent="menu_principal"/>
+	<menuitem id="menu_vertical_conf" name="Plan" parent="menu_horizontal_conf" action="action_open_configurador"/>
+	<menuitem id="menu_vertical_es" name="Espacios" parent="menu_horizontal_cons" action="action_open_espacios"/>
+	<menuitem id="menu_vertical_eq" name="Equipación" parent="menu_horizontal_cons" action="action_open_equipacion"/>
 </odoo>
