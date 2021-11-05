@@ -87,9 +87,9 @@
 		<field name="model">equipacion</field>
 		<field name="arch" type="xml">
 			<tree>
+				<field name="espacio_id"/>
 				<field name="name"/>
 				<field name="name_fr"/>
-				<field name="espacio_id"/>
 				<field name="ull" widget="many2many_tags"/>
 				<field name="sub_ull" widget="many2many_tags"/>
 				<field name="sub_ull_2" widget="many2many_tags"/>

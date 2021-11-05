@@ -15,7 +15,7 @@ class Equipacion(models.Model):
 	sub_ull = fields.Char(string="SUB ULL")
 	sub_ull_2 = fields.Char(string="SUB ULL 2")
 	item_code = fields.Char(string="item-code")
-	espacio_id = fields.Many2one(comodel_name='espacios',delegate=True, string = 'Local')
+	espacio_id = fields.Many2one(comodel_name='espacios', string = 'Local')
 	descripcion_es = fields.Text(string='Descripción')
 	descripcion_fr = fields.Text(string='Description')
 	descripcion_en = fields.Text(string='Description')
